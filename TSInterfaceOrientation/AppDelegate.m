@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "TSNavigationController.h"
+#import "TSTabBarController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIStoryboard *ar =  [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [ar instantiateInitialViewController];
+    TSNavigationController  *nc = [[TSNavigationController alloc] initWithRootViewController:vc];
+    nc.tabBarItem.title = @"Demo";
+    
+    TSTabBarController *tc = [[TSTabBarController alloc] init];
+    UIViewController *vc1 = [[UIViewController alloc] init];
+    tc.viewControllers = [NSArray arrayWithObjects:nc,vc1, nil];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = tc;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -40,6 +55,19 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window
+{
+    NSUInteger orientations = UIInterfaceOrientationMaskAll;
+    
+//    if ([self.window.rootViewController isKindOfClass:[UINavigationController class]]) {
+////        UIViewController* presented = [(UITabBarController *)self.window.rootViewController selectedViewController];
+//        UIViewController *presented = [[(UINavigationController*)self.window.rootViewController viewControllers] lastObject];
+//        orientations = [presented supportedInterfaceOrientations];
+//        return orientations;
+//    }
+    return UIInterfaceOrientationMaskAll;
 }
 
 @end

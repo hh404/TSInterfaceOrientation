@@ -13,6 +13,9 @@
 		EC38E6DE1DFE800300C4B604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC38E6DC1DFE800300C4B604 /* Main.storyboard */; };
 		EC38E6E01DFE800300C4B604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC38E6DF1DFE800300C4B604 /* Assets.xcassets */; };
 		EC38E6E31DFE800300C4B604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC38E6E11DFE800300C4B604 /* LaunchScreen.storyboard */; };
+		EC38E6EC1DFE861500C4B604 /* TSDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC38E6EB1DFE861500C4B604 /* TSDemoViewController.m */; };
+		EC38E6EF1DFE8C7A00C4B604 /* TSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC38E6EE1DFE8C7A00C4B604 /* TSTabBarController.m */; };
+		EC38E6F21DFE8CC100C4B604 /* TSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC38E6F11DFE8CC100C4B604 /* TSNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		EC38E6DF1DFE800300C4B604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC38E6E21DFE800300C4B604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC38E6E41DFE800300C4B604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC38E6EA1DFE861500C4B604 /* TSDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSDemoViewController.h; sourceTree = "<group>"; };
+		EC38E6EB1DFE861500C4B604 /* TSDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSDemoViewController.m; sourceTree = "<group>"; };
+		EC38E6ED1DFE8C7A00C4B604 /* TSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTabBarController.h; sourceTree = "<group>"; };
+		EC38E6EE1DFE8C7A00C4B604 /* TSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTabBarController.m; sourceTree = "<group>"; };
+		EC38E6F01DFE8CC100C4B604 /* TSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSNavigationController.h; sourceTree = "<group>"; };
+		EC38E6F11DFE8CC100C4B604 /* TSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				EC38E6E11DFE800300C4B604 /* LaunchScreen.storyboard */,
 				EC38E6E41DFE800300C4B604 /* Info.plist */,
 				EC38E6D31DFE800300C4B604 /* Supporting Files */,
+				EC38E6EA1DFE861500C4B604 /* TSDemoViewController.h */,
+				EC38E6EB1DFE861500C4B604 /* TSDemoViewController.m */,
+				EC38E6ED1DFE8C7A00C4B604 /* TSTabBarController.h */,
+				EC38E6EE1DFE8C7A00C4B604 /* TSTabBarController.m */,
+				EC38E6F01DFE8CC100C4B604 /* TSNavigationController.h */,
+				EC38E6F11DFE8CC100C4B604 /* TSNavigationController.m */,
 			);
 			path = TSInterfaceOrientation;
 			sourceTree = "<group>";
@@ -149,8 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC38E6EF1DFE8C7A00C4B604 /* TSTabBarController.m in Sources */,
+				EC38E6EC1DFE861500C4B604 /* TSDemoViewController.m in Sources */,
 				EC38E6DB1DFE800300C4B604 /* ViewController.m in Sources */,
 				EC38E6D81DFE800300C4B604 /* AppDelegate.m in Sources */,
+				EC38E6F21DFE8CC100C4B604 /* TSNavigationController.m in Sources */,
 				EC38E6D51DFE800300C4B604 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
